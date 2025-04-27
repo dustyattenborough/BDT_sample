@@ -57,7 +57,7 @@ evaluation code : BDT_sample/BDT_sample__using_batch/bdt_sample__using__batch__e
 ```
     python bdt_xgboost_sh_detail__JADEv0_noPMTsel__96x208__eval.py -o $DIRNAME -f $DIRNAME/model_bdt__xgboost__depth_${depth}__estimator_1200__lr_${lr}__random_${rs}__test_size_0.250__JADEv0_noPMTsel__96x208_train.json --pmtSel $pmtSel
 ```
-### make dataset 
+### Data split
 ```
 ##### Define dataset instance #####
 lengths = [int(x*len(dset)) for x in config['dataset/splitFractions']]
