@@ -1,0 +1,194 @@
+datasets:
+  - runNumber: 1563
+    label: ME
+    version: v3.0_woM_RM500
+    filesize: 22G
+    paths:
+      - dataset/comdata_ver3_wo_masking__RMunder500/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v3.0_woM_RM500
+    filesize: 1.4G
+    paths:
+      - dataset/comdata_ver3_wo_masking__RMunder500/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v3.0_woM_RM500
+    filesize: 35G
+    paths:
+      - dataset/comdata_ver3_wo_masking__RMunder500/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v3.0_woM_RM500
+    filesize: 2.0G
+    paths:
+      - dataset/comdata_ver3_wo_masking__RMunder500/r001592/FN/*.h5
+
+
+
+
+
+
+
+  - runNumber: 1563
+    label: ME
+    version: v3.0_woM
+    filesize: 22G
+    paths:
+      - dataset/comdata_ver3_wo_masking/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v3.0_woM
+    filesize: 1.4G
+    paths:
+      - dataset/comdata_ver3_wo_masking/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v3.0_woM
+    filesize: 35G
+    paths:
+      - dataset/comdata_ver3_wo_masking/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v3.0_woM
+    filesize: 2.0G
+    paths:
+      - dataset/comdata_ver3_wo_masking/r001592/FN/*.h5
+
+
+
+
+
+  - runNumber: 1563
+    label: ME
+    version: v3.0_wBL_RM500
+    filesize: 22G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut_RMunder500/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v3.0_wBL_RM500
+    filesize: 1.4G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut_RMunder500/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v3.0_wBL_RM500
+    filesize: 35G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut_RMunder500/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v3.0_wBL_RM500
+    filesize: 2.0G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut_RMunder500/r001592/FN/*.h5
+
+
+
+
+
+  - runNumber: 1563
+    label: ME
+    version: v3.0_wBL
+    filesize: 22G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v3.0_wBL
+    filesize: 1.4G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v3.0_wBL
+    filesize: 35G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v3.0_wBL
+    filesize: 2.0G
+    paths:
+      - dataset/comdata_ver3_wo_masking__baseline_cut/r001592/FN/*.h5
+
+
+
+  - runNumber: 1563
+    label: ME
+    version: v3.0
+    filesize: 22G
+    paths:
+      - dataset2/comdata_ver3_all/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v3.0
+    filesize: 1.4G
+    paths:
+      - dataset2/comdata_ver3_all/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v3.0
+    filesize: 35G
+    paths:
+      - dataset2/comdata_ver3_all/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v3.0
+    filesize: 2.0G
+    paths:
+      - dataset2/comdata_ver3_all/r001592/FN/*.h5
+
+  - runNumber: 1563
+    label: ME
+    version: v1.0
+    filesize: 29G
+    paths:
+      - dataset/comdata_step_by_step__QndTnRecmin_cut/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v1.0
+    filesize: 1.2G
+    paths:
+      - dataset/comdata_step_by_step__QndTnRecmin_cut/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v1.0
+    filesize: 46G
+    paths:
+      - dataset/comdata_step_by_step__QndTnRecmin_cut/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v1.0
+    filesize: 1.7G
+    paths:
+      - dataset/comdata_step_by_step__QndTnRecmin_cut/r001592/FN/*.h5
+
+
+  - runNumber: 1563
+    label: ME
+    version: v1.0__Q_cut
+    filesize: 29G
+    paths:
+      - dataset/comdata_step_by_step__Q_cut/r001563/ME/*.h5
+  - runNumber: 1563
+    label: FN
+    version: v1.0__Q_cut
+    filesize: 1.2G
+    paths:
+      - dataset/comdata_step_by_step__Q_cut/r001563/FN/*.h5
+  - runNumber: 1592
+    label: ME
+    version: v1.0__Q_cut
+    filesize: 46G
+    paths:
+      - dataset/comdata_step_by_step__Q_cut/r001592/ME/*.h5
+  - runNumber: 1592
+    label: FN
+    version: v1.0__Q_cut
+    filesize: 1.7G
+    paths:
+      - dataset/comdata_step_by_step__Q_cut/r001592/FN/*.h5
+
+

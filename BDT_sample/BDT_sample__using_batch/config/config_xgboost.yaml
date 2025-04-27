@@ -1,0 +1,14 @@
+## Configuration for the training, evaluation
+dataset:
+    query_train: "runNumber == 1563 and version == 'v1.0__Q_cut'"
+    query_eval: "runNumber == 1592 and version == 'v1.0__Q_cut'"
+    subrun: all ## all, even, odd, random
+    splitFractions: [0.75, 0.25] ## training set, validation set. (test set is the reminders)
+
+training:
+    seed: 12345
+    shuffle: True
+    batch: 1000
+    n_estimator: 500
+    learningRate: 1e-1
+

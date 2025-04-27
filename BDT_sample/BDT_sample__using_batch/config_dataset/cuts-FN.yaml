@@ -1,0 +1,16 @@
+# presets for the event selection
+cuts:
+    vertexRho: [-1., 1.4]
+    vertexZ: [-1.0, 1.0]
+    DINscore: 0.0 ## DIN-score > 0.0
+
+    dT: 2000 ## >2000ns micro-seconds
+    dVertex: 0.6 # <1.3 for ME, <0.6 for FN
+
+    recoMinValue: 400 ## RecoMinValue < 400
+    allPMTValid: True ## Require all PMT's RecoMinValue > 0
+
+    PMTCharge: [20, 500]
+    PMTPedestalVariance: 0.3 ## <0.3
+    PMTValidFirstADC: True
+    
