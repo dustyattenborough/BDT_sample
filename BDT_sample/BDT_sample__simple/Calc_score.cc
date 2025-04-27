@@ -33,8 +33,8 @@ vector<vector<string>> read_csv( string filename = "prediction.csv" ){
 
 void Calc_score(string dirname){
     cout<<" dirname : " << dirname << endl; 
-    //vector<vector<string>> sample = read_csv( dirname + "/prediction.csv" );
-    vector<vector<string>> sample = read_csv( dirname + "/bdt__xgboost__depth_5__estimator_550__lr_0.1__random_18__test_size_0.250__noPedestal__JADEv0.csv" );
+    vector<vector<string>> sample = read_csv( dirname + "/prediction.csv" ); // <-- input filename 
+    
     cout<< sample[0][0]<<endl;
     cout << sample.size() <<endl;
     for (int i=0; i<sample[0].size() ; i++){
