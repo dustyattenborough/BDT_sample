@@ -19,6 +19,36 @@
 
 * early_stopping_rounds: If the model does not improve over a given number of rounds, it stops training early to prevent overfitting and unnecessary computation.
 
+-----------------------
+"All the code in this folder assumes the use of h5py files with the following tree and branch structure."
+```
+import h5py
+with h5py.File(args.output, 'w', libver='latest') as fout:
+    m = fout.create_group('info')
+    m.create_dataset('shape', data=[nCh, nT], dtype='u4')
+
+    g = fout.create_group('events')
+    g.create_dataset('run', data=out_run, dtype='u4')
+    g.create_dataset('subrun', data=out_subrun, dtype='u4')
+    g.create_dataset('trigID', data=out_trigID, dtype='u4')
+
+    g.create_dataset('dT', data=out_dT, dtype='f4')
+    g.create_dataset('Npmt', data=out_Npmt, dtype='f4')
+    g.create_dataset('dVertex', data=out_dVertex, dtype='f4')
+
+    g.create_dataset('vertexX', data=out_vertexX, dtype='f4')
+    g.create_dataset('vertexY', data=out_vertexY, dtype='f4')
+    g.create_dataset('vertexZ', data=out_vertexZ, dtype='f4')
+
+    g.create_dataset('validPMT', data=out_validPMT, dtype='?')
+    g.create_dataset('pmtQ', data=out_pmtQ, dtype='f4')
+    g.create_dataset('waveform', data=out_waveform, dtype='f4')
+
+    if args.save_all:
+        g.create_dataset('recoMinValue', data=out_RecoMinValue, dtype='f4')
+
+if not args.quiet: print("Done.")
+```
 ------------------------------------------------
 
 ## BDT sample simple
