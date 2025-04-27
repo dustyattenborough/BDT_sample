@@ -80,20 +80,6 @@ for i in tqdm(range(6157)):
     label_ME = np.ones(len(pulse_ME))
 
     pulse_ME = pulse_ME[:,40:]
-    if pulse_check == 0:
-    #if i==0: 
-        #print("pusle_ME :")
-        #print(pulse_ME[:,40:].shape)
-        plt.title("run 1592 ME",fontsize=15)
-        plt.plot(np.linspace(40*2,248*2,208),pulse_ME[0],label="original")
-        #plt.plot(np.linspace(40*2,248*2,208),np.abs(fft(pulse_ME[0])),label="fft")
-        plt.legend()
-        plt.ylim(-0.1,1.1)
-        plt.xlabel("ns",fontsize=13)
-        plt.ylabel("normalized",fontsize=13)
-        plt.grid()
-        plt.show()
-
 
     wf_all_1592 += pulse_ME.tolist()
     label_all_1592 += label_ME.tolist()
@@ -149,17 +135,6 @@ for i in tqdm(range(6157)):
     #print(pulse_FN.shape)
 
     pulse_FN = pulse_FN[:,40:]
-    if pulse_check == 1:
-    #if i==0: 
-        plt.title("run 1592 FN",fontsize=15)
-        plt.plot(np.linspace(40*2,248*2,208),pulse_FN[0],label="original")
-        plt.legend()
-        plt.ylim(-0.1,1.1)
-        plt.xlabel("ns",fontsize=13)
-        plt.ylabel("normalized",fontsize=13)
-        plt.grid()
-        plt.show()
-
 
     wf_all_1592 += pulse_FN.tolist()
     label_all_1592 += label_FN.tolist()
@@ -212,18 +187,6 @@ for i in tqdm(range(4869)):
     #print(pulse_ME.shape)
 
     pulse_ME = pulse_ME[:,40:]
-    if pulse_check == 2: 
-    #if i==0: 
-        plt.title("run 1563 ME",fontsize=15)
-        plt.plot(np.linspace(40*2,248*2,208),pulse_ME[0],label="original")
-        #plt.plot(np.linspace(40*2,248*2,208),np.abs(fft(pulse_ME[0])),label="fft")
-        plt.legend()
-        plt.ylim(-0.1,1.1)
-        plt.xlabel("ns",fontsize=13)
-        plt.ylabel("normalized",fontsize=13)
-        plt.grid()
-        plt.show()
-
     wf_all_1563 += pulse_ME.tolist()
     label_all_1563 += label_ME.tolist()
 
@@ -254,21 +217,6 @@ for i in tqdm(range(4869)):
     label_FN = np.zeros(len(pulse_FN))
     #print("pusle_FN :")
     #print(pulse_FN.shape)
-
-
-    pulse_FN = pulse_FN[:,40:]
-    if pulse_check == 3: 
-    #if i==0: 
-        plt.title("run 1563 FN",fontsize=15)
-        plt.plot(np.linspace(40*2,248*2,208),pulse_FN[0],label="original")
-        #plt.plot(np.linspace(40*2,248*2,208),np.abs(fft(pulse_ME[0])),label="fft")
-        plt.legend()
-        plt.ylim(-0.1,1.1)
-        plt.xlabel("ns",fontsize=13)
-        plt.ylabel("normalized",fontsize=13)
-        plt.grid()
-        plt.show()
-
 
     wf_all_1563 += pulse_FN.tolist()
     label_all_1563 += label_FN.tolist()
