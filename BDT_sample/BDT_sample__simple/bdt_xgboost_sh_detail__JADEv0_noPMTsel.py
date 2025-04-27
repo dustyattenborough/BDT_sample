@@ -94,9 +94,7 @@ for i in tqdm(range(6157)):
     vtxX_ME, vtxY_ME, vtxZ_ME = [], [], []
 
 
-#plt.hist(Npmt_1592_ME,bins=96,range=[0,97],histtype="step")
-#plt.xlabel("N_pmt")
-#plt.show()
+
 
 ############################
 for i in tqdm(range(6157)):
@@ -149,9 +147,6 @@ for i in tqdm(range(6157)):
     vtxX_FN, vtxY_FN, vtxZ_FN = [], [], []
 
 
-#plt.hist(Npmt_1592_FN,bins=96,range=[0,97],histtype="step")
-#plt.xlabel("N_pmt")
-#plt.show()
 
 
 ######################
