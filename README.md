@@ -85,7 +85,7 @@ y_pred_proba_1592 = boosted_model.predict_proba(wf_all_1592)
 
 * training code : BDT_sample/BDT_sample__using_batch/bdt_sample__using__batch__train.py
 ```
-    python ${PWDDir}/bdt_xgboost_sh_detail__JADEv0_noPMTsel.py --depth ${depth} --estimators ${estimator} --lr ${lr} --random_states ${rand} --test_size ${test_size} >> Loss_RS_${rand}__pmtSel_${pmtSel}.txt
+    python bdt_xgboost_sh_detail__JADEv0_noPMTsel.py --depth ${depth} --estimators ${estimator} --lr ${lr} --random_states ${rand} --test_size ${test_size} 
 ```
 * evaluation code : BDT_sample/BDT_sample__using_batch/bdt_sample__using__batch__eval.py
 ```
