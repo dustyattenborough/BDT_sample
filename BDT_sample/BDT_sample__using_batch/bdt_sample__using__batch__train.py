@@ -106,8 +106,8 @@ start = time.time()
 
 print("start !")
 
-val_data = np.zeros([90000,96*208])
-val_label = np.ones([90000])*-1
+val_data = np.zeros([500000,96*208])
+val_label = np.ones([500000])*-1
 
 nbatch = args.batch
 for i, (data_val, weight_val, fracQ_val, label_val) in enumerate(tqdm(valLoader)):
