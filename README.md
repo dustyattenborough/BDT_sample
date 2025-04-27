@@ -1,23 +1,15 @@
 # BDT_sample
 
 ##  hyper parameter
-max_depth: Controls the maximum depth of each tree, which helps in preventing overfitting by limiting the complexity.
-
-n_estimators: Number of boosting rounds, essentially how many trees the model will build.
-
-learning_rate: Shrinks the contribution of each tree to prevent overfitting. Lower values require more trees to model the data.
-
-random_state: Ensures the results are reproducible.
-
-subsample: Randomly samples a subset of the training data to build each tree, which can reduce overfitting.
-
-colsample_bytree: Specifies the fraction of features to be considered for building each tree. Helps with regularization.
-
-eval_metric: This is the metric used for evaluating the performance of the model. In this case, it's logloss, which is suitable for binary classification.
-
-scale_pos_weight: Useful in handling class imbalance by assigning higher weight to the positive class.
-
-early_stopping_rounds: If the model does not improve over a given number of rounds, it stops training early to prevent overfitting and unnecessary computation.
+*max_depth: Controls the maximum depth of each tree, which helps in preventing overfitting by limiting the complexity.
+*n_estimators: Number of boosting rounds, essentially how many trees the model will build.
+*learning_rate: Shrinks the contribution of each tree to prevent overfitting. Lower values require more trees to model the data.
+*random_state: Ensures the results are reproducible.
+*subsample: Randomly samples a subset of the training data to build each tree, which can reduce overfitting.
+*colsample_bytree: Specifies the fraction of features to be considered for building each tree. Helps with regularization.
+*eval_metric: This is the metric used for evaluating the performance of the model. In this case, it's logloss, which is suitable for binary classification.
+*scale_pos_weight: Useful in handling class imbalance by assigning higher weight to the positive class.
+*early_stopping_rounds: If the model does not improve over a given number of rounds, it stops training early to prevent overfitting and unnecessary computation.
 
 
 ## BDT sample simple
@@ -44,7 +36,9 @@ y_pred_proba_1592 = boosted_model.predict_proba(wf_all_1592)
     
 
 ## BDT sample using batch
-using batch like cnn
+using batch spliting like cnn
+using array ->  (eventN x pulse bin)
+
 all event is spliting 
 All events were split into batches of the size specified in the config.yaml file.
 By training with small batches, even very large datasets can be handled without issue.
