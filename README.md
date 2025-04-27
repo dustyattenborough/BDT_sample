@@ -1,4 +1,4 @@
 # BDT_sample
-## BDT sample simple
+### BDT sample simple
 
-## BDT sample using batch
+### BDT sample using batch
