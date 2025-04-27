@@ -23,6 +23,10 @@ early_stopping_rounds: If the model does not improve over a given number of roun
 ## BDT sample simple
 basic BDT example
 using array ->  (eventN x pulse bin)
+
+```
+    python bdt_xgboost_sh_detail__JADEv0_noPMTsel.py 
+```
     
 ### Data split
 ```
@@ -46,9 +50,13 @@ All events were split into batches of the size specified in the config.yaml file
 By training with small batches, even very large datasets can be handled without issue.
 
 training code : BDT_sample/BDT_sample__using_batch/bdt_sample__using__batch__train.py
-
+```
+    python ${PWDDir}/bdt_xgboost_sh_detail__JADEv0_noPMTsel.py --depth ${depth} --estimators ${estimator} --lr ${lr} --random_states ${rand} --test_size ${test_size} >> Loss_RS_${rand}__pmtSel_${pmtSel}.txt
+```
 evaluation code : BDT_sample/BDT_sample__using_batch/bdt_sample__using__batch__eval.py
-
+```
+    python bdt_xgboost_sh_detail__JADEv0_noPMTsel__96x208__eval.py -o $DIRNAME -f $DIRNAME/model_bdt__xgboost__depth_${depth}__estimator_1200__lr_${lr}__random_${rs}__test_size_0.250__JADEv0_noPMTsel__96x208_train.json --pmtSel $pmtSel
+```
 ### make dataset 
 ```
 ##### Define dataset instance #####
