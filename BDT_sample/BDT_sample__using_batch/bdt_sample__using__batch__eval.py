@@ -114,11 +114,6 @@ for ibatch, (data, weight, fracQ, label) in enumerate(tqdm(testLoader)):
     data = data[:,:,40:].reshape((len(data),96*208))
     label = label.float().numpy()
     weight = weight.float().numpy()
-    #print(type(weight))
-    #print(weight.shape)
-    
-    #print( boosted_model.predict_proba(data) )
-    #print( np.array(boosted_model.predict_proba(data)).shape )
 
     eval_pred[ibatch*nbatch:(ibatch*nbatch+nbatch2)] += np.array(boosted_model.predict_proba(data)[:,1])
     eval_label[ibatch*nbatch:(ibatch*nbatch+nbatch2)] = np.array(label)
